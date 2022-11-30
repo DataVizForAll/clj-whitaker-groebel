@@ -43,7 +43,7 @@
             <a class="nav-link js-scroll-trigger" href="#section3">Creating Visualizations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section4">PPE and Change in Funding Chart</a>
+            <a class="nav-link js-scroll-trigger" href="#section4">Work Cited</a>
           </li>
         </ul>
       </div>
@@ -74,12 +74,7 @@
 
           <p>These are important questions to ask to see if the funding each student should be getting follows them as they go to different school districts. If that funding isn’t moving with the students then there must be more research done to see as to where that money is going and why it isn’t moving with the students.</p>
              
-          <p>In the state of Connecticut’s primary education system, there are many inconsistencies with the distribution of funding to different districts. The financial health of a district is measured by the state through a metric known as “per pupil expenditures”, this metric clumps together the entirety of funding a district receives and divides it by the number of students enrolled in that district. This gauge measures how much funding can theoretically be allocated to each student. Schools that have the ability to spend more on their students fare much better than those who cannot. Our community partners have tasked us with finding out how the per-pupil expenditures vary by school district in the greater Hartford region, and how it has changed over time. These are vital questions to understanding the deeply seeded disparities in equality in educational access in the Hartford region as they inform viewers of the truth that certain districts are underfunded and have been historically underfunded while others continue to thrive.</p>
-
-
-          <p>To assess this question, I turned to EdSight from the Connecticut department of education to find school funding data. I found “per-pupil-expenditures” data for the years 2017, 2019, and 2021 which I then combined in a sheets document. With these data points on hand I created a column to display the mean PPE data to get a better gauge at how much each district was spending on their students on average. I then made a percentage change formula column where I found the percentage growth / decline of funding in each district from 2017 to 2021. With all the data I needed on hand, I utilized the VLOOKUP function to find the data points for the select school districts in the greater Hartford region and I began thinking about visualizing the data. My first visualization was a choropleth map that I created in hopes of detailing the funding disparities (PPE differences) from school district to school district. As seen in <a href="https://datawrapper.dwcdn.net/01bFy/1/">Figure 1</a>, having the range of colors on the map represent different levels of PPE, viewers are able to easily gauge what districts / regions are underfunded and which are not. By visualizing differences in PPE spending on a district wide basis, I feel as though the question of how student-spending varies by district was accurately answered.</p>
-
-         
+          <p>In the state of Connecticut’s primary education system, there are many inconsistencies with the distribution of funding to different districts. The financial health of a district is measured by the state through a metric known as “per pupil expenditures”, this metric clumps together the entirety of funding a district receives and divides it by the number of students enrolled in that district. This gauge measures how much funding can theoretically be allocated to each student. Schools that have the ability to spend more on their students fare much better than those who cannot. Our community partners have tasked us with finding out how the per-pupil expenditures vary by school district in the greater Hartford region, and how it has changed over time. These are vital questions to understanding the deeply seeded disparities in equality in educational access in the Hartford region as they inform viewers of the truth that certain districts are underfunded and have been historically underfunded while others continue to thrive.</p>    
        
         </div>
       </div>
@@ -92,7 +87,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Visualizing Funding Data</h2>
+          <h2>Visualizing the Data</h2>
           <p class="lead">How many school-age youth reside in each town, and how has it changed over a decade?</p>
 <p> To begin to answer this question I first needed to find data on the population of age groups in each of Hartford Counties towns. I found this data on Social Explorer, a website that contains census data on all types of demographics among the US. Social Explorer provided me with data for children ages 5-17 for the years 2010, 2017, and 2020.</p>
           
@@ -130,8 +125,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Mapping Funding Data</h2>
-          <p>This is my new citation that I am putting in, it is from the School and State Financing Project</p>
+          <h2>Creating Visualizations</h2>
+          <p>In creating this Figure 1 and Figure 2 representing the changes in school aged children We used the website Social Explorer. We used it to find their American Community Survey (ACS) 5 year estimates for 2010, 2017, and 2020 (most recent year) to find the population of all ages of Connecticut's Subdivisions. When the data comes out of the website it has all the towns in Connecticut and age ranges of “5 and under” all the way to “85 and over” so We cleaned up the data in a Google Sheet to select the towns in Hartford County and the age ranges 5 to 9, 10 to 14, and 15 to 17. We then calculated the total population of 5 to 17 year olds for each year we were observing. We then normalized the data using the percent change formula, (New value - Old value) / Old value, in order to compare the populations of 2010 to 2020 and 2017 to 2020. We then used the website Datawrapper to create the split bar graph by pasting in the towns and corresponding percent changes of 2010 and 2020. To create the choropleth map we first used a website called Mapshapper to select the towns in Hartford County and create a geojson file that we could drop into Datawrapper to show a map of only Harford County. We then used the percent change data comparing 2017 to 2020 to create the choropleth map. In the map we choose to compare 2017 to 2020 in an attempt to be able to make comparisons to the Per Pupil Expenditure choropleth map to see if the migration of student students is followed by the increase of student spending. As a caution people should keep in mind that this map uses data from the American Community Survey 5 year estimates meaning there is an “uncertainty associated with them as a result of being based on a sample of the population rather than the full population” (Understanding and Using). Furthermore, the most recent data for 2020 was during the COVID-19 Pandemic which led to the inability to collect data from certain areas and populations causing the data to not be fully representative of the US population (Our Commitment). 
+</p>
+          <p>  To assess this question, I turned to EdSight from the Connecticut department of education to find school funding data. I found “per-pupil-expenditures” data for the years 2017, 2019, and 2021 which I then combined in a sheets document. With these data points on hand I created a column to display the mean PPE data to get a better gauge at how much each district was spending on their students on average. I then made a percentage change formula column where I found the percentage growth / decline of funding in each district from 2017 to 2021. With all the data I needed on hand, I utilized the VLOOKUP function to find the data points for the select school districts in the greater Hartford region and I began thinking about visualizing the data.</p>
+          <p> My first visualization was a choropleth map that I created in hopes of detailing the funding disparities (PPE differences) from school district to school district. By having the range of colors on the map represent different levels of PPE, viewers are able to easily gauge what districts / regions are underfunded and which are not. By visualizing differences in PPE spending on a district wide basis, I feel as though the question of how student-spending varies by district was accurately answered.</p> 
+          <p> To tackle the second question regarding funding changes over time, I thought it best to visualize both aspects of the data through a dual column chart. The chart displays districts with higher mean PPE’s at the top and lower at the bottom, on the left hand side of the chart is the percentage change from 17 to 21’. One would think that districts with higher mean PPE’s would have smaller percentage changes in funding which is the basic trend on the chart, but, there are multiple outliers that defy this trend and make you  wonder if there are some questionable practices occurring with the distribution of school funding. Seeing certain schools with small mean PPE’s have virtually no increase in mean PPE over the years and then seeing districts with large mean PPE’s having large increases raises the question of how the fiscal budget of CT’s public schools should be fairly managed. Through my map and chart, I feel as though the question of how per-student spending varies by school district, and how it changes over time has been accurately addressed.</p>
+
 
           <p> School and State Financing Project, <a href="https://schoolstatefinance.org/issues/segregation-and-education">https://schoolstatefinance.org/issues/segregation-and-education</a>
 “Segregation & Education”</a> School and State Financing Project, 2022.</p>
@@ -146,39 +146,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>PPE and Change in Funding Chart</h2>
+          <h2>Work Cited</h2>
 
+           <p class="lead">Work Cited</p>
+
+<p> “Our Commitment to Quality: A Revised ACS Estimation Methodology.” The United States Census Bureau, https://www.census.gov/newsroom/blogs/random-samplings/2022/03/acs-5year-estimation-methodology.html. Accessed 16 Nov. 2022. </p>
+<p> “Segregation & Education.” School+State Finance Project, https://schoolstatefinance.org/issues/segregation-and-education. Accessed 11 Nov. 2022. </p>
+<p> “Understanding and Using American Community Survey Data: What All Data Users Need to Know.” Census.Gov, https://www.census.gov/programs-surveys/acs/library/handbooks/general.html. Accessed 16 Nov. 2022.</p>
           <p>Change names of `Section 1` etc. to customized navigation labels that make sense for your data story, such as `Why It Matters` or `How We Made This` etc. To do this you must change names in TWO places: see the Navigation Container (around lines 30-50) and the corresponding Sections below. Keep the section numbers but change the reader-friendly labels.</p>
 
-          <h4>Optional Subheaders: Use H4 tags to break up long sections</h4>
-
-          <p>All of your data visualizations should be interactive. But if you need to insert a static image, you can upload a JPG or PNG to the GitHub repo, and insert it using the HTML img tag as shown below:</p>
-
-          <img src="sample-image.jpg" style="width: 100%; margin: 30px 0">
-
-          <p>Figure 2: Describe your image in a caption, and always credit the source if someone else created it.</p>
-
-          <h4>Quickly Edit and View Changes on Your Local Computer</h4>
-
-          <p>HINT: Instead of slowly making edits on GitHub, you can quickly make edits in your local computer and view them instantly in your browser. Here's a list of steps (in HTML format):
-            <ol>
-              <li>Go to your GitHub repo and select Code > Download Zip and uncompress the folder.</li>
-              <li>Install a free code editor tool. My fav is <a href="https://atom.io">Atom Editor</a> but there are others, too.</li>
-              <li>Open the "index.html" file with your code editor and make edits.</li>
-              <li>In your browser, go to File > Open to view the "index.html" file that is on your local computer.</li>
-              <li>After making some edits in the "index.html" file, save it, and refresh your browser to view changes. Most edits should appear right away.</li>
-              <li>After making multiple edits on your local computer, carefully copy and paste the contents of "index.html" in your online GitHub account, and test your published updates online.
-            </ol>
-          </p>
-
-          <h4>Two Options for Tables</h4>
-
-          <p>If you need to create a table, first try the Datawrapper Tables tool -- see <a href='https://handsondataviz.org/table.html'>HODV Chapter 8</a> -- and embed the results like this:</p>
-
-
-          <p>Table 1: Add your standalone caption here.</p>
-
-          <p>A second option is to use the <a href="https://www.tablesgenerator.com/html_tables">Tables Generator HTML tool</a>. Go to File > Import or manually enter your table data, then Generate the HTML code, and paste it here, similar to this sample: </p>
 
           <style type="text/css">
           .tg  {border-collapse:collapse;border-spacing:0;}
